@@ -1,0 +1,15 @@
+# Lab: Frame Collisions Pattern
+
+## Mục tiêu
+Giấu tin bằng cách cố tình tạo ra các va chạm mạng (frame collision) và điều chỉnh thời gian gửi lại gói tin để mã hóa dữ liệu bit 0 và 1.
+
+## Thành phần
+- `sender.py`: Gửi các gói tin ICMP với khoảng thời gian khác nhau để tạo va chạm.
+- `receiver.py`: Dùng `tcpdump` thu lại các gói và phân tích thứ tự sau va chạm.
+
+## Cách mã hóa
+- Bit 1: Ping nhanh (gây xung đột nhanh)
+- Bit 0: Ping chậm (tránh xung đột hoặc trễ)
+
+## Kiểm tra
+Chạy `checkWork.sh` để xác nhận đã bắt được gói tin và có thể phân tích file.

@@ -1,0 +1,15 @@
+# Lab: Inter-arrival Time Pattern
+
+## Mục tiêu
+Giấu tin bằng cách điều chỉnh thời gian giữa các lần gửi gói UDP.
+
+## Thành phần
+- `sender.py`: Gửi các gói UDP cách nhau 0.1s (bit 1) và 0.5s (bit 0).
+- `receiver.py`: Thu gói bằng `tcpdump -tt`, ghi thời gian chính xác.
+
+## Cách mã hóa
+- Bit 1: gửi cách nhau 0.1s
+- Bit 0: gửi cách nhau 0.5s
+
+## Kiểm tra
+Phân tích thời gian đến trong `result.txt` và chạy `checkWork.sh`.

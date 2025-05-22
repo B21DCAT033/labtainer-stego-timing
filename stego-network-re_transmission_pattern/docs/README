@@ -1,0 +1,15 @@
+# Lab: Re-transmission Pattern
+
+## Mục tiêu
+Giấu tin bằng cách cố ý gửi lại gói UDP (retransmit) để biểu diễn bit 1.
+
+## Thành phần
+- `sender.py`: Gửi gói UDP 1 lần (bit 0) hoặc 2 lần (bit 1).
+- `receiver.py`: Thu gói và phân tích dựa trên lặp lại nội dung.
+
+## Cách mã hóa
+- 1 lần: bit 0
+- Gửi lại (2 lần): bit 1
+
+## Kiểm tra
+`checkWork.sh` kiểm tra có lặp lại mẫu gói trong `result.txt`.

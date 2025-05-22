@@ -1,0 +1,15 @@
+# Lab: PDU Order Pattern
+
+## Mục tiêu
+Giấu tin bằng cách thay đổi thứ tự các gói UDP được gửi đi.
+
+## Thành phần
+- `sender.py`: Gửi gói "A" trước "B" (bit 1), "B" trước "A" (bit 0).
+- `receiver.py`: Thu lại và xác định thứ tự gói.
+
+## Cách mã hóa
+- A → B: bit 1
+- B → A: bit 0
+
+## Kiểm tra
+Phân tích thứ tự trong `result.txt`, xác nhận bằng `checkWork.sh`.

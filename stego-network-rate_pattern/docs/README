@@ -1,0 +1,15 @@
+# Lab: Rate Pattern
+
+## Mục tiêu
+Giấu tin bằng cách thay đổi tốc độ gửi gói tin (burst nhanh/chậm) để mã hóa bit.
+
+## Thành phần
+- `sender.py`: Gửi "H" với tốc độ nhanh và "L" với tốc độ chậm.
+- `receiver.py`: Dùng `tcpdump` để thu gói và phân tích burst.
+
+## Cách mã hóa
+- Bit 1: gửi nhanh (nhiều gói liên tục)
+- Bit 0: gửi chậm (cách quãng)
+
+## Kiểm tra
+Phân tích file `result.txt` và chạy `checkWork.sh` để xác thực.
